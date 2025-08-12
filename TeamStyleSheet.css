@@ -1,0 +1,28 @@
+body{
+    background-image: url(space2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.names{
+    width: 200%;
+    height: 100px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: medium;
+}
