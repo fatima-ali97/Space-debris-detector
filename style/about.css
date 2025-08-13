@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.idea {
+    margin: 0px;
+    padding: 0 50px;
+    background-color:white;
+    text-align: center;
+    align-items: center;
+    background-color: azure;
+}
+
+.idea p{
+    background-color: white;
+    background-position: 50px;
+    background-size: 100%;
+    cursor: pointer;
+}

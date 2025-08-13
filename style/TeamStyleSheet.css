@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(space2.jpg);
+    background-image: url(../assets/team.jpg);
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
