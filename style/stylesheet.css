@@ -17,7 +17,7 @@ body{
     height: 100vh;
     place-items: center;
     background-color: black;
-    background-image: url(space3.jpg);
+    background-image: url(../assets/space3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
