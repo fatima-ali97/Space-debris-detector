@@ -1,25 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <link href="style/stylesheet.css" rel="stylesheet" type="text/css">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.png" />
+
+    <!--google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--end of google font links-->
+
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+
+    <link href="style/stylesheet.css" rel="stylesheet" type="text/css" />
     <title>Space Travellers</title>
-    <body>
-        <header>
-            <div class="menu">
-                <ul class="links">
-                    <li><a>Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/team.html">Team</a></li>
-                </ul>
-            </div>
-        </header>
-        <br>
-        <div class="name">
-            <h1>Space Traveller</h1>
+  </head>
+
+  <body class="home">
+    <header class="primary-header flex">
+      <div>
+        <img src="./assets/logo.png" alt="logo" class="logo" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex"
+        >
+          <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="./pages/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="./pages/team.html"
+              >Team</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main id="main" class="grid-container grid-container--home">
+      <div>
+        <h1
+          class="text-dark fs-500 ff-sans-cond uppercase letter-spacing-1"
+          style="font-weight: 600"
+        >
+          We present to you <br />
+          <span
+            class="d-block fs-900 ff-serif text-white"
+            style="font-weight: 400"
+            >Space Traveller</span
+          >
+        </h1>
+        <button class="explore-btn">
+          <a href="#drag-and-drop-section"> Explore Now</a>
+        </button>
+      </div>
+      <!--  <div>
+        <a
+          href="destination.html"
+          class="large-button uppercase ff-serif text-dark bg-white"
+          >Explore</a
+        >
+      </div> -->
+    </main>
+    <!--DRAG & DROP-->
+    <section id="drag-and-drop-section">
+      <h2 class="ff-serif fs-600">Let AI Pave Your Orbit!</h2>
+      <p class="ff-sans fs-300">Drag&drop an image to detect space debris</p>
+      <div id="drop-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <dotlottie-wc
+          src="https://lottie.host/70c99039-0c90-4e7c-9346-8b3fc36cfca3/RCpJZJn5gk.lottie"
+          style="height: 70%; width: 70%"
+          speed="1"
+          autoplay
+          loop
+        ></dotlottie-wc>
+      </div>
+      <br />
+    </section>
+
+    <!--HISTORY-->
+    <div class="history-container">
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Image 1</h3>
+            <p>Result:</p>
+            <p>Accuracy:</p>
+          </div>
         </div>
-        <br>
-        <br>
-        <div class="explore">
-            <button class="button" role="button">Explore</button>
+
+        <div class="timeline-step">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Image 2</h3>
+            <p>Result:</p>
+            <p>Accuracy:</p>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/script.js"></script>
 </html>
