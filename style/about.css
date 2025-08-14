@@ -5,6 +5,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*---Header background--*/
 .header{
     min-height: 100vh;
     width: 100%;
@@ -14,6 +15,7 @@
     color:#fff;
 }
 
+/*--Navigator bar--*/
 nav{
     display: flex;
     padding: 2% 6%;
@@ -51,6 +53,7 @@ nav{
     width: 100%;
 }
 
+/*---Title--*/
 .title{
     width: 100%;
     top: 50%;
@@ -67,6 +70,7 @@ nav{
     font-size: 14px;
 }
 
+/*-- To resize the page for smaller screen--*/
 @media(max-width: 700px){
     .title h1{
         font-size: 20px;
@@ -87,13 +91,12 @@ nav{
 }
 
 /*---Project Idea---*/
-
 .idea {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    height: 400px;
+    height: 300px;
 }
 
 h2{
@@ -110,11 +113,41 @@ p{
     justify-content: space-between;
 }
 
-/*----Footer---*/
+/*-Resources-*/
+.resource{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    height: 300px;
+}
 
-.footer{
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*----Footer---*/
+footer{
+    height: 50px;
     display: flex;
     flex-direction: column;
     background-color: black;
+    background-size: cover;
     color: #fff;
+    text-align: center;
+    justify-content: center;
 }
