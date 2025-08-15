@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(../assets/team.jpg);
+    background-image: url(../assets/desktop.jpg);
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
@@ -21,6 +21,7 @@ body{
     color: aliceblue;
      text-align: center;
     position: relative;
+    margin-top: 50px;
 }
 
 .team-cards{
@@ -33,7 +34,7 @@ body{
 }
 
 .team-card{
-    width:100;
+    width:80;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -41,8 +42,8 @@ body{
     background-color: aliceblue;
     border-radius: 20px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-    margin: 0px 20px;
-    padding: 20px;
+    margin: 0px 15px;
+    padding: 15px;
     flex-grow: 1;
     flex-basis: 0;
     justify-content: center;
@@ -72,6 +73,33 @@ body{
 .team-detial p{
     color:black;
     font-size: 18px;
+}
+
+.contact-button{
+    display: inline;
+    color:#a1a7c0;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: none;
+    padding: 10px 15px;
+    border: 2px solid #cfd4e7;
+    border-radius: 5px;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+}
+
+.contact-button:hover{
+    background-color: #748dff;
+    border: none;
+    color:#fff;
+    box-shadow: 0 10px 17px -7px #748dff;
+}
+
+.contact-button.active{
+    background-color: #748dff;
+    border:none;
+    color:#fff;
+    box-shadow:  0 10px 17px -7px #748dff;
 }
 
 @media screen and (max-width: 768px){
