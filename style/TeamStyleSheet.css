@@ -9,11 +9,10 @@ body{
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
-    margin-bottom: 200px;
 }
 
-.team-section{
-    width:80%;
+.team-title{
+    margin:  19px  10px 70px;
 }
 
 .team-title h1{
@@ -21,10 +20,10 @@ body{
     font-weight: 400;
     color: #fff;
     text-align: center;
-    position: relative;
 }
 
 .team-cards{
+    margin:  10px  10px 100px;
     display: flex;
     align-items: center;
     max-width: 1500px;
@@ -38,7 +37,7 @@ body{
     align-items: center;
     background-color: aliceblue rgba(0,0,0,0.2);
     border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     margin: 0px 15px;
     padding: 15px;
     flex-grow: 1;
@@ -51,14 +50,6 @@ body{
 
 .team-card:hover{
     transform: translateY(-12px);
-}
-
-.team-image img{
-    border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    object-fit:cover;
-    margin-bottom: 10px;
 }
 
 .team-detail h3{
@@ -87,17 +78,17 @@ body{
 }
 
 .contact-button:hover{
-    background-color: #748dff;
+    background-color: #0b153e;
     border: none;
     color:#fff;
-    box-shadow: 0 10px 17px -7px #748dff;
+    box-shadow: 0 10px 17px -7px #0b153e;
 }
 
 .contact-button.active{
-    background-color: #748dff;
+    background-color: #0b153e;
     border:none;
     color:#fff;
-    box-shadow:  0 10px 17px -7px #748dff;
+    box-shadow:  0 10px 17px -7px #0b153e;
 }
 
 @media screen and (max-width: 768px){
