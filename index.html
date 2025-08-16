@@ -86,27 +86,38 @@
           <a href="#drag-and-drop-section"> Explore Now</a>
         </button>
       </div>
-      <!--  <div>
-        <a
-          href="destination.html"
-          class="large-button uppercase ff-serif text-dark bg-white"
-          >Explore</a
-        >
-      </div> -->
     </main>
     <!--DRAG & DROP-->
     <section id="drag-and-drop-section">
       <h2 class="ff-serif fs-600">Let AI Pave Your Orbit!</h2>
       <p class="ff-sans fs-300">Drag&drop an image to detect space debris</p>
-      <div id="drop-box" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <dotlottie-wc
-          src="https://lottie.host/70c99039-0c90-4e7c-9346-8b3fc36cfca3/RCpJZJn5gk.lottie"
-          speed="1"
-          autoplay
-          loop
-        ></dotlottie-wc>
+      <!-- Upload  -->
+      <div id="drop-box">
+        <form id="file-upload-form" class="uploader">
+          <input
+            id="file-upload"
+            type="file"
+            name="fileUpload"
+            accept="image/*"
+          />
+          <dotlottie-wc
+            src="https://lottie.host/70c99039-0c90-4e7c-9346-8b3fc36cfca3/RCpJZJn5gk.lottie"
+            speed="1"
+            autoplay
+            loop
+          ></dotlottie-wc>
+          <label for="file-upload" id="file-drag">
+            <img id="file-image" src="#" class="hidden" />
+            
+            <div id="response" class="hidden">
+              <div id="messages"></div>
+              <progress class="progress" id="file-progress" value="0">
+                <span>0</span>%
+              </progress>
+            </div>
+          </label>
+        </form>
       </div>
-      <br />
     </section>
 
     <!--HISTORY-->
