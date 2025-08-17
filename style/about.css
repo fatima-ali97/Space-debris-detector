@@ -47,28 +47,16 @@ h2{
 }
 
 p{
-    color: #777;
+    margin: 10px 10px 10px 10px;
+    color: #fff;
     font-size: 14px;
     font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: #fff;
+    line-height: 30px;
     width: 100%;
     max-width: 1500px;
-    margin:  10px  20px 100px;
-    display: flex;
     align-items: center;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-    margin: 0px 30px;
-    padding: 30px;
-    flex-grow: 1;
-    flex-basis: 0;
     justify-content: center;
     text-align: center;
-    transition: transform 0.6s ease;
-    cursor: pointer;
 }
 
 .resource ul li{
@@ -86,7 +74,7 @@ p{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300px;
 }
 
